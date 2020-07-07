@@ -31,13 +31,13 @@ const NavBar = (props) => {
 							Drag & Drop
 						</NavLink>
 						<NavLink className='nav-item nav-link' to={MAPS} onClick={() => { }}>
-							Leaflet maps
+							Maps
 						</NavLink>
 						<NavLink className='nav-item nav-link' to={RESUME} onClick={() => { }}>
 							Resume
 						</NavLink>
 						<NavLink className='nav-item nav-link' to={CONTACT} onClick={() => { }}>
-							Contact me
+							Contact
 						</NavLink>
 					</ul>
 				</div>
