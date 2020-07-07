@@ -1,13 +1,14 @@
 import React from 'react'
-import { PUBLIC_URL } from '../constants/environment'
+import { NavLink } from 'react-router-dom'
+import logo from '../assets/logo.svg'
+import { DND, ABOUT } from '../constants/routes'
 
 const NavBar = (props) => {
-	console.log(PUBLIC_URL)
 	return (
 		<div className='row'>
 			<nav className='col-12 navbar navbar-expand-lg navbar-light bg-light'>
-				<a className='navbar-brand' href='/'>
-					<img src={PUBLIC_URL +  '/assets/logo.svg'} />
+				<a className='navbar-brand col-1' href='/' target='_blank'>
+					<img src={logo} alt={'logo'} className='img-fluid' />
 				</a>
 				<button
 					className='navbar-toggler'
@@ -23,21 +24,12 @@ const NavBar = (props) => {
 
 				<div className='collapse navbar-collapse' id='navbarSupportedContent'>
 					<ul className='navbar-nav mr-auto'>
-						<li className='nav-item active'>
-							<a className='nav-link' href='#'>
-								Home <span className='sr-only'>(current)</span>
-							</a>
-						</li>
-						<li className='nav-item'>
-							<a className='nav-link' href='#'>
-								Link
-							</a>
-						</li>
-						<li className='nav-item'>
-							<a className='nav-link disabled' href='#'>
-								Disabled
-							</a>
-						</li>
+						<NavLink className='nav-item nav-link' to={ABOUT} onClick={() => {}}>
+							About me
+						</NavLink>
+						<NavLink className='nav-item nav-link' to={DND} onClick={() => {}}>
+							Drag & Drop
+						</NavLink>
 					</ul>
 				</div>
 			</nav>
