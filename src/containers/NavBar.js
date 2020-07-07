@@ -7,8 +7,8 @@ const NavBar = (props) => {
 	return (
 		<div className='row'>
 			<nav className='col-12 navbar navbar-expand-lg navbar-light bg-light'>
-				<a className='navbar-brand col-1' href='/' target='_blank' title='View all projects'>
-					<img src={logo} alt={'logo'} className='img-fluid' />
+				<a className='navbar-brand' href='/' target='_blank' title='View all projects'>
+					<img src={logo} alt={'logo'} className='img-fluid logo' />
 				</a>
 				<button
 					className='navbar-toggler'
