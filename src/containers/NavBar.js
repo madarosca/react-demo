@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.svg'
-import { DND, ABOUT } from '../constants/routes'
+import { DND, ABOUT, MAPS, RESUME, CONTACT } from '../constants/routes'
 
 const NavBar = (props) => {
 	return (
-		<div className='row'>
+		<div className='row mb-2'>
 			<nav className='col-12 navbar navbar-expand-lg navbar-light bg-light'>
 				<a className='navbar-brand' href='/' target='_blank' title='View all projects'>
 					<img src={logo} alt={'logo'} className='img-fluid logo' />
@@ -29,6 +29,15 @@ const NavBar = (props) => {
 						</NavLink>
 						<NavLink className='nav-item nav-link' to={DND} onClick={() => {}}>
 							Drag & Drop
+						</NavLink>
+						<NavLink className='nav-item nav-link' to={MAPS} onClick={() => { }}>
+							Leaflet maps
+						</NavLink>
+						<NavLink className='nav-item nav-link' to={RESUME} onClick={() => { }}>
+							Resume
+						</NavLink>
+						<NavLink className='nav-item nav-link' to={CONTACT} onClick={() => { }}>
+							Contact me
 						</NavLink>
 					</ul>
 				</div>
