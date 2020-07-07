@@ -2,7 +2,7 @@
 	"name": "react-demo",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://madarosca.github.io/react-demo",
+	"homepage": "https://madarosca.github.io/react-demo/",
 	"description": "React demo with React, Hooks, Redux",
 	"main": "index.js",
 	"author": "Madalina Rosca",
