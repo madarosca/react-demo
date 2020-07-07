@@ -37,7 +37,7 @@ const NavBar = (props) => {
 							Resume
 						</NavLink>
 						<NavLink className='nav-item nav-link' to={CONTACT} onClick={() => { }}>
-							Contact me
+							Contact
 						</NavLink>
 					</ul>
 				</div>
