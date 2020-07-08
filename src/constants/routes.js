@@ -1,5 +1,6 @@
 export const ABOUT = '/about'
-export const DND = '/dnd'
-export const MAPS = '/maps'
 export const RESUME = '/resume'
 export const CONTACT = '/contact'
+export const PORTFOLIO = '/portfolio'
+export const DND = 'dnd'
+export const MAPS = 'maps'

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.svg'
-import { DND, ABOUT, MAPS, RESUME, CONTACT } from '../constants/routes'
+import { ABOUT, RESUME, CONTACT, PORTFOLIO } from '../constants/routes'
 
 const NavBar = (props) => {
 	return (
@@ -20,11 +20,8 @@ const NavBar = (props) => {
 						<NavLink className='menu-item nav-link px-0' to={ABOUT}>
 							About
 						</NavLink>
-						<NavLink className='menu-item nav-link px-0' to={DND}>
-							Drag & Drop
-						</NavLink>
-						<NavLink className='menu-item nav-link px-0' to={MAPS}>
-							Maps
+						<NavLink className='menu-item nav-link px-0' to={PORTFOLIO}>
+							Portfolio
 						</NavLink>
 						<NavLink className='menu-item nav-link px-0' to={RESUME}>
 							Resume

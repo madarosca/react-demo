@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Dnd = () => {
-	return <div>Drag & Drop</div>
+	return <div>Kanban Drag & Drop Cards</div>
 }
 
 export default Dnd
