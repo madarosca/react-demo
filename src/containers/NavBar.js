@@ -5,44 +5,35 @@ import { DND, ABOUT, MAPS, RESUME, CONTACT } from '../constants/routes'
 
 const NavBar = (props) => {
 	return (
-		<div className='row mb-2'>
-			<nav className='col-12 navbar navbar-expand-lg navbar-light bg-light'>
-				<a className='navbar-brand' href='/' target='_blank' title='View all projects'>
-					<img src={logo} alt={'logo'} className='img-fluid logo' />
-				</a>
-				<button
-					className='navbar-toggler'
-					type='button'
-					data-toggle='collapse'
-					data-target='#navbarSupportedContent'
-					aria-controls='navbarSupportedContent'
-					aria-expanded='false'
-					aria-label='Toggle navigation'
-				>
-					<span className='navbar-toggler-icon'></span>
-				</button>
+		<nav className='col-12 navbar navbar-expand-lg navbar-light bg-transparent sticky-top'>
+			<a className='navbar-brand' href='/' target='_blank' title='View all projects'>
+				<img src={logo} alt={'logo'} className='img-fluid logo' />
+			</a>
+			<span className='navbar-text text-uppercase'>Madalina Rosca</span>
+			<button className='navbar-toggler' type='button' onClick={() => console.log('toggle navbar')}>
+				<span className='navbar-toggler-icon'></span>
+			</button>
 
-				<div className='collapse navbar-collapse' id='navbarSupportedContent'>
-					<ul className='navbar-nav mr-auto'>
-						<NavLink className='nav-item nav-link' to={ABOUT} onClick={() => {}}>
-							About me
-						</NavLink>
-						<NavLink className='nav-item nav-link' to={DND} onClick={() => {}}>
-							Drag & Drop
-						</NavLink>
-						<NavLink className='nav-item nav-link' to={MAPS} onClick={() => { }}>
-							Maps
-						</NavLink>
-						<NavLink className='nav-item nav-link' to={RESUME} onClick={() => { }}>
-							Resume
-						</NavLink>
-						<NavLink className='nav-item nav-link' to={CONTACT} onClick={() => { }}>
-							Contact
-						</NavLink>
-					</ul>
-				</div>
-			</nav>
-		</div>
+			<div className='collapse navbar-collapse justify-content-end' id='navbar'>
+				<ul className='navbar-nav'>
+					<NavLink className='menu-item nav-link px-0' to={ABOUT}>
+						About me
+					</NavLink>
+					<NavLink className='menu-item nav-link px-0' to={DND}>
+						Drag & Drop
+					</NavLink>
+					<NavLink className='menu-item nav-link px-0' to={MAPS}>
+						Maps
+					</NavLink>
+					<NavLink className='menu-item nav-link px-0' to={RESUME}>
+						Resume
+					</NavLink>
+					<NavLink className='menu-item nav-link px-0' to={CONTACT}>
+						Contact
+					</NavLink>
+				</ul>
+			</div>
+		</nav>
 	)
 }
 

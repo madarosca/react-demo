@@ -1,13 +1,9 @@
 import React from 'react'
-import './App.css'
+import './index.scss'
 import Routes from './routes'
 
 const App = () => {
-	return (
-		<div className='App'>
-			<Routes />
-		</div>
-	)
+	return <Routes />
 }
 
 export default App
