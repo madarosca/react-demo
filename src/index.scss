@@ -1,3 +1,6 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import './styles/index.scss';
+
 html,
 body {
 	font-size: 16px;
@@ -6,6 +9,6 @@ body {
 	padding: 0;
 }
 
-@import '~bootstrap/scss/bootstrap.scss';
-@import './styles/navbar.scss';
-@import './styles/map.scss';
+.color-primary {
+	color: $LIGHT_BLUE;
+}
